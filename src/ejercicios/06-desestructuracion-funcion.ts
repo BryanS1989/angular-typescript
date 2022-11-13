@@ -9,7 +9,7 @@ console.log('Hola Mundo!!!');
     ============================================
 */
 
-interface Producto {
+export interface Producto {
     desc : string;
     precio : number;
 }
@@ -24,7 +24,7 @@ const tableta : Producto = {
     precio : 350
 }
 
-function calculaImpuestosSobreVenta ( productos : Producto[] ) : [number, number] {
+export function calculaImpuestosSobreVenta ( productos : Producto[] ) : [number, number] {
 
     let total = 0;
 
@@ -42,6 +42,6 @@ const articulos = [ telefono, tableta ];
 const isv = calculaImpuestosSobreVenta( articulos );
 const [ total, impuestoSobreVentas ] = calculaImpuestosSobreVenta( articulos );
 
-console.log( 'ISV: ', isv );
-console.log( 'Total: ', total );
-console.log( 'Impuesto Sobre Ventas: ', impuestoSobreVentas );
+// console.log( 'ISV: ', isv );
+// console.log( 'Total: ', total );
+// console.log( 'Impuesto Sobre Ventas: ', impuestoSobreVentas );
